@@ -1,0 +1,46 @@
+{
+  "name": "layout-boilerplate",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ruslan Zolotaryov <zolotaryov.rusik@yandex.ru>",
+  "license": "ISC",
+  "devDependencies": {
+    "@commitlint/cli": "^9.1.2",
+    "cz-customizable": "^6.3.0",
+    "husky": "^4.2.5",
+    "@babel/core": "^7.10.2",
+    "@babel/preset-env": "^7.10.2",
+    "browser-sync": "^2.26.7",
+    "del": "^5.1.0",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-babel": "^8.0.0",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-plumber": "^1.2.1",
+    "gulp-rename": "^2.0.0",
+    "gulp-sass": "^4.1.0",
+    "gulp-shorthand": "^1.1.0",
+    "gulp-svgstore": "^7.0.1",
+    "gulp-terser": "^1.2.0",
+    "node-sass": "^4.14.1",
+    "gulp-pug": "^4.0.1"
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS -g './config/commitlint.js'"
+    }
+  },
+  "config": {
+    "commitizen": {
+      "path": "node_modules/cz-customizable"
+    },
+    "cz-customizable": {
+      "config": "config/commitizen.js"
+    }
+  }
+}
