@@ -1,6 +1,6 @@
-const { src, dest } = require('gulp')
+const { src, dest } = require('gulp');
 // const pug = require('gulp-pug')
-const plumber = require('gulp-plumber')
+const plumber = require('gulp-plumber');
 
 // module.exports = function html() {
 //     return src('src/app/*.pug')
@@ -10,7 +10,5 @@ const plumber = require('gulp-plumber')
 // }
 
 module.exports = function html() {
-    return src('src/app/*.html')
-        .pipe(plumber())
-        .pipe(dest('build'))
-}
+  return src('src/app/*.html').pipe(plumber()).pipe(dest('build'));
+};
