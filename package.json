@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "gulp raise",
+    "build": "gulp build"
   },
   "author": "Ruslan Zolotaryov <zolotaryov.rusik@yandex.ru>",
   "license": "ISC",
@@ -15,6 +16,7 @@
     "browser-sync": "^2.26.7",
     "cz-customizable": "^6.3.0",
     "del": "^5.1.0",
+    "eslint": "^7.13.0",
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^7.0.1",
     "gulp-babel": "^8.0.0",
