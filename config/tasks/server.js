@@ -33,7 +33,7 @@ module.exports = function serve(cb) {
     )
   );
   gulp.watch('src/scripts/**/*.js', gulp.series(scripts, readyReload));
-  gulp.watch('src/app/**/*.pug', gulp.series(pugHtml, readyReload));
+  gulp.watch('src/app/**/*.html', gulp.series(pugHtml, readyReload));
 
   return cb();
 };
