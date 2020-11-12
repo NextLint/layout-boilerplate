@@ -27,10 +27,8 @@ module.exports = function serve(cb) {
   );
   // gulp.watch('src/img/sprite/*.svg', gulp.series(svgSprite, readyReload))
   gulp.watch(
-    'src/css/**/*.scss',
-    gulp.series(styles, (cb) =>
-      gulp.src('build/css').pipe(server.stream()).on('end', cb)
-    )
+    'src/css/**/*.{scss,css}',
+    gulp.series(styles, (cb) => gulp.src('build/css').pipe(server.stream()))
   );
   gulp.watch('src/js/**/*.js', gulp.series(scripts, readyReload));
   gulp.watch('src/*.html', gulp.series(html, readyReload));
