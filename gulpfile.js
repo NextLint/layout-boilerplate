@@ -1,7 +1,7 @@
 const { series } = require('gulp');
 
 const clean = require('./config/tasks/clean.js');
-const html = require('./config/tasks/pug.js');
+const html = require('./config/tasks/html.js');
 const styles = require('./config/tasks/styles.js');
 const scripts = require('./config/tasks/scripts.js');
 const images = require('./config/tasks/images.js');

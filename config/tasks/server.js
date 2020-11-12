@@ -2,7 +2,7 @@ const gulp = require('gulp');
 
 const images = require('./images');
 const styles = require('./styles');
-const pugHtml = require('./pug');
+const html = require('./html');
 const scripts = require('./scripts');
 // const svgSprite = require('./svgSprite')
 
@@ -27,13 +27,13 @@ module.exports = function serve(cb) {
   );
   // gulp.watch('src/img/sprite/*.svg', gulp.series(svgSprite, readyReload))
   gulp.watch(
-    'src/app/**/*.scss',
+    'src/css/**/*.scss',
     gulp.series(styles, (cb) =>
       gulp.src('build/css').pipe(server.stream()).on('end', cb)
     )
   );
-  gulp.watch('src/scripts/**/*.js', gulp.series(scripts, readyReload));
-  gulp.watch('src/app/**/*.html', gulp.series(pugHtml, readyReload));
+  gulp.watch('src/js/**/*.js', gulp.series(scripts, readyReload));
+  gulp.watch('src/*.html', gulp.series(html, readyReload));
 
   return cb();
 };

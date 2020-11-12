@@ -10,5 +10,5 @@ const plumber = require('gulp-plumber');
 // }
 
 module.exports = function html() {
-  return src('src/app/*.html').pipe(plumber()).pipe(dest('build'));
+  return src('src/*.html').pipe(plumber()).pipe(dest('build'));
 };

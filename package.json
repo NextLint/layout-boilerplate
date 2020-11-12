@@ -35,7 +35,7 @@
   },
   "husky": {
     "hooks": {
-      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS -g './config/commitlint.js'"
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS -g './config/git/commitlint.js'"
     }
   },
   "config": {
@@ -43,7 +43,7 @@
       "path": "node_modules/cz-customizable"
     },
     "cz-customizable": {
-      "config": "config/commitizen.js"
+      "config": "config/git/commitizen.js"
     }
   }
 }

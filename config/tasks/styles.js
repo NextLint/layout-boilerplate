@@ -7,7 +7,7 @@ const sass = require('gulp-sass');
 const plumber = require('gulp-plumber');
 
 module.exports = function styles() {
-  return src('src/app/**/*.scss')
+  return src('src/css/*.{scss,css}')
     .pipe(plumber())
     .pipe(sass())
     .pipe(
